@@ -1,0 +1,52 @@
+Goal
+Create a backend service for the existing React frontend of the Agile Story Board and Kanban Board. The backend must be built using Python FastAPI and use SQLite as the database. The backend will be in a separate repository or folder from the frontend. Provide detailed instructions to run both backend and frontend locally on VS Code.
+
+Frontend Integration
+The React frontend should call the backend through FastAPI API endpoints.
+
+Data Relationships
+The data follows this hierarchy:
+Admin → Team Lead → Projects → Stories.
+
+Sample Data
+Add sample data for all tables to demonstrate the relationships and functionality.
+
+API Endpoints
+Provide a complete list of all API endpoints for the following functionalities with their HTTP methods and example request and response formats:
+
+User management including create, read, update, delete
+
+Project management including create, read, update, delete
+
+Story management including create, read, update, delete
+
+Sprint management if required
+
+Data Models and Database Structure
+Design and define the SQLite database with tables for Users, Projects, Stories, and any other required entities.
+For each table, include fields, relationships, and constraints matching the data hierarchy.
+
+Authentication and Authorization
+Implement authentication and role-based authorization.
+Use JWT tokens for secure login and role management.
+Roles will include Admin, Team Lead, and User.
+
+Business Logic
+
+Only Team Leads can create new sprints and set the time range.
+
+Stories must always belong to a project and follow the prefix rules (for example T&D or ADMS based on the project filter).
+
+Any other rules needed to support the board functionality.
+
+Error Handling
+Implement clear and consistent error handling.
+Return meaningful HTTP status codes and JSON formatted error messages for validation errors or other failures.
+
+Testing
+Add automated tests using pytest to cover key endpoints such as user creation, project creation, and story creation.
+
+Deployment and Local Setup
+Provide clear instructions to run the backend and frontend locally using VS Code.
+Include steps to install dependencies, start the FastAPI server, and connect the React frontend to the backend API.
+Ensure the instructions cover database setup, loading sample data, and verifying that the application works end to end.

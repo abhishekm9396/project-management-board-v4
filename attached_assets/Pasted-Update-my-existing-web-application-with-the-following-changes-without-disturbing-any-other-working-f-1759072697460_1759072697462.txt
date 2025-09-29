@@ -1,0 +1,58 @@
+Update my existing web application with the following changes without disturbing any other working functionality.
+
+Context
+
+Sections in the app: Dashboard, Kanban Board, Agile Story Board, Notifications.
+Roles: Admin, Team Lead, User (all must be able to access and use both boards with their current role permissions).
+
+
+
+Required Modifications
+
+1️⃣ Kanban Board
+
+Redesign and refactor to follow a Kanban workflow:
+
+Implement Work-In-Progress (WIP) limits per column.
+Support continuous flow (no sprint timebox).
+Metrics: capture lead time and cycle time.
+Cards can represent any work item (task, bug, enhancement).
+Ensure it remains fully functional for all 3 roles.
+
+2️⃣ Agile Story Board
+
+Redesign and refactor to follow a Scrum/Agile sprint-based workflow:
+
+Cards represent user stories with tasks/sub-tasks.
+Enable sprint creation, start, and end dates.
+Include metrics: velocity and burndown charts.
+No WIP limit requirement.
+Accessible and usable by Admin, Team Lead, and User roles.
+
+
+
+3️⃣ Story Card Enhancements (Apply to Both Boards)
+
+Make the following fields mandatory: Story Type, Priority, Story Points, Status, Assignee, Active Sprint.
+Set default value for Status as “Backlog”.
+Provide user name suggestions (auto-complete / dropdown) in Assignee based on existing users.
+Ensure each story card:
+
+Adjusts to page zoom level dynamically.
+Supports vertical scrolling if card content exceeds available height.
+
+
+
+Critical Instructions
+
+Do NOT modify: existing backend APIs, database schema, authentication, notifications, or any other working features outside these two boards.
+Maintain role-based permissions as currently implemented.
+Preserve all existing data and history of boards.
+If a backend endpoint must be touched (only if unavoidable), clearly document it and avoid breaking existing contracts.
+
+
+
+Output Needed
+
+Updated frontend UI design (responsive) and frontend code changes (React/Angular/etc., depending on current stack).
+Clear list of any minor backend adjustments (if absolutely required).

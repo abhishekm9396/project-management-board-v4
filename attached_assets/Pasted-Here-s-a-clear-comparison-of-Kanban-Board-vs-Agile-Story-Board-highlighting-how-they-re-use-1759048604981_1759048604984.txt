@@ -1,0 +1,21 @@
+Here’s a clear comparison of **Kanban Board** vs **Agile Story Board**, highlighting how they’re used in project management and software development:
+
+| **Aspect**          | **Kanban Board**                                                                                                   | **Agile Story Board**                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Purpose**         | Visualize **continuous workflow** and limit work in progress (WIP) to improve flow and efficiency.                 | Visualize **sprint-based user stories** and tasks during an Agile/Scrum sprint to track progress.                                   |
+| **Process Focus**   | Focuses on **flow of work**: tasks move continuously from “To Do” → “In Progress” → “Done,” with no fixed timebox. | Focuses on **iterations (sprints)**: user stories are planned for a sprint (usually 1–4 weeks) and tracked until sprint completion. |
+| **Timeframe**       | No fixed iteration; work is pulled as capacity allows. Continuous delivery.                                        | Bound to a sprint (timeboxed). Work is completed within the sprint duration.                                                        |
+| **Work Items**      | Cards represent any type of work item: bug, task, enhancement, etc.                                                | Cards represent **user stories**, which are broken down into tasks.                                                                 |
+| **WIP Limits**      | Strong emphasis on **WIP limits** to avoid bottlenecks and ensure smooth flow.                                     | WIP limits are not mandatory; sprint backlog defines capacity.                                                                      |
+| **Typical Columns** | To Do → In Progress → Review/Testing → Done (can be customized).                                                   | Backlog → To Do → In Progress → Testing → Done (reflecting sprint stages).                                                          |
+| **Metrics**         | Measures **lead time** and **cycle time** (how long it takes for a task to move across the board).                 | Measures **velocity**, **burndown charts**, and sprint goal completion.                                                             |
+| **Flexibility**     | Very flexible, can be used for support/maintenance work where priorities shift often.                              | More structured; tied to the Scrum framework and sprint planning.                                                                   |
+| **Ownership**       | Team pulls work when ready. No strict roles required.                                                              | Scrum roles (Product Owner, Scrum Master, Development Team) manage and monitor progress.                                            |
+| **When to Use**     | Best for **continuous flow projects** like operations, support, or ongoing product development.                    | Best for **sprint-based projects** where work is defined and prioritized for each sprint.                                           |
+
+### Key Takeaways
+
+* **Kanban Board** = Continuous, flow-based, WIP-focused.
+* **Agile Story Board** = Sprint-focused, story/task tracking for Agile/Scrum.
+
+👉 In practice, **both boards look visually similar** (columns and cards), but their **mindset and metrics differ**: Kanban is about **flow & limits**, while an Agile Story Board is about **planning & delivering stories within a sprint**.

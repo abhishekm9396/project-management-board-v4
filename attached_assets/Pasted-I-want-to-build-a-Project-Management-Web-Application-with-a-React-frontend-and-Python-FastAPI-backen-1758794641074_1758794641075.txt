@@ -1,0 +1,188 @@
+I want to build a Project Management Web Application with a React frontend and Python FastAPI backend. The goal is to create a fully functional starter version that I can run locally with clean architecture, role-based access, and AI estimation placeholders. Please generate a complete project scaffold including folder structures, example code, database schema, and local run instructions.
+
+Tech Stack
+
+Frontend: React (use best modern setup: Vite + React 18, Tailwind CSS for styling, Context API or Redux Toolkit for state management, react-beautiful-dnd for Kanban drag-and-drop)
+
+Backend: Python FastAPI
+
+Database: SQLite (use SQLAlchemy ORM)
+
+Authentication: Email/password with JWT tokens
+
+Hosting: Local only initially, include suggestions for Docker or AWS ECR deployment
+
+AI/ML Component: Placeholder API for now to suggest task effort and priority
+
+Frontend Requirements (React)
+
+Kanban Board
+
+Columns: To Do, In Progress, Blocked, Validation, Completed
+
+Drag-and-drop support for stories
+
+Inline editing for story title, description, and priority
+
+Story Management Form
+
+Fields: Title, Description, Pointer/Estimated Time, Acceptance Criteria, Status, Priority, Sprint, Tags, Due Date, Attachments
+
+“Get AI Estimate” button for effort and priority
+
+Comments Section
+
+Flat comments with user tagging (e.g., @username)
+
+Dashboard & Reports
+
+Visualizations using Chart.js or ngx-charts
+
+Metrics: Completed stories, effort points, priority distribution, per-user contribution
+
+Role-Based UI Features
+
+Admin: Full control (CRUD on users, stories, roles)
+
+Team Lead: Add comments, notes, task summaries, tracking tools
+
+User: Submit done work summaries, view assigned stories
+
+Additional Features
+
+Responsive design
+
+Notifications (optional: in-app toast notifications)
+
+Dark/light mode toggle (bonus)
+
+Backend Requirements (FastAPI + SQLite)
+
+Authentication & Authorization
+
+JWT-based authentication
+
+Role-based permission handling: Admin, Team Lead, User
+
+API Endpoints
+
+Stories: CRUD, attach files, filter by sprint/user/status
+
+Users: CRUD (Admin only), role assignment
+
+Comments: Create, read, delete (as per role)
+
+AI Estimation: Placeholder endpoint returning random/logic-based estimates
+
+Database Schema
+
+Users: id, name, email, password_hash, role, created_at, updated_at
+
+Stories: id, title, description, pointer, acceptance_criteria, status, priority, sprint_id, tags, due_date, attachments, created_by, updated_by, created_at, updated_at
+
+Comments: id, story_id, user_id, comment_text, created_at
+
+Audit Logs: id, table_name, record_id, action, performed_by, timestamp
+
+Seed Script
+
+Populate initial admin user and demo stories with comments
+
+Include clear comments explaining how to modify/add sample data
+
+API Docs
+
+Include automatic Swagger UI setup (FastAPI built-in)
+
+AI Estimation Placeholder
+
+Effort Estimation: Based on story history (use mock/sample data for now)
+
+Priority Prediction: Based on story description
+
+Integration: API endpoint and frontend “Get AI Estimate” button for each story
+
+Testing & Local Run
+
+Include local run instructions in a file (README.md) for:
+
+Setting up Python virtual environment
+
+Installing dependencies (pip install -r requirements.txt)
+
+Running FastAPI backend (uvicorn main:app --reload)
+
+Running React frontend (npm install && npm run dev)
+
+Accessing Swagger docs and frontend UI
+
+Suggest Docker setup for both frontend and backend (optional)
+
+Folder Structure
+
+Frontend (react-frontend/)
+
+react-frontend/
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  ├─ KanbanBoard.jsx
+│  │  ├─ StoryForm.jsx
+│  │  ├─ CommentsSection.jsx
+│  │  └─ Dashboard.jsx
+│  ├─ context/
+│  │  └─ AuthContext.jsx
+│  ├─ services/
+│  │  ├─ api.js
+│  │  └─ aiService.js
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ package.json
+├─ tailwind.config.js
+└─ README.md
+
+
+Backend (fastapi-backend/)
+
+fastapi-backend/
+├─ app/
+│  ├─ main.py
+│  ├─ models.py
+│  ├─ schemas.py
+│  ├─ crud.py
+│  ├─ auth.py
+│  ├─ dependencies.py
+│  ├─ routes/
+│  │  ├─ users.py
+│  │  ├─ stories.py
+│  │  ├─ comments.py
+│  │  └─ ai_estimation.py
+│  └─ database.py
+├─ seed.py
+├─ requirements.txt
+├─ .env.example
+└─ README.md
+
+Deliverables
+
+Clean folder structures for frontend & backend
+
+Sample React components (Kanban board, forms, dashboards)
+
+FastAPI API routes with role-based permissions
+
+SQLite database schema with SQLAlchemy models
+
+Seed script for demo data
+
+Local run instructions (README.md)
+
+Placeholder AI estimation API
+
+Bonus: Charts, drag-and-drop Kanban, dark/light mode
+
+
+
+Also, please consider that I am completely new to frontend world, so please generate every guiding step and add comments, docstrings wherever necessary.
+Make the app compatible to run on my local machine vs code and also provide me guiding steps to follow to run the app on localhost.
+Attatched is the file with all the details of project requirement please refer it as well.

@@ -1,0 +1,51 @@
+Here’s a clearer, **UI-focused, descriptive, and precise** version of your prompt that a designer or developer can easily follow:
+
+---
+
+### Kanban Board – Requested Improvements
+
+#### **User Experience Enhancements**
+
+* **Sample Data**
+
+  * Preload sample users: **Abhishek**, **Tanay** (users) under project **T\&D**, working with team lead **Shantnu**.
+* **Card Detailed View (on click)**
+
+  * Show **Title**, **Acceptance Criteria**, and **Description**.
+  * **Comments / Activity Feed**: supports @mentions and timestamps.
+  * **Subtasks / Checklist**.
+  * **Attachments & Links**: files, URLs, GitHub commits, etc.
+  * **Custom Fields**: priority, story points (max 5), sprint, epic, assignee, etc.
+  * **Formatting**: bullet-point option for Acceptance Criteria and Description.
+  * **Right Panel**: collapsible activity history with date/time stamps for all edits (status changes, assignee changes, etc.).
+
+#### **Team Lead Features**
+
+* Add sample team leads: **Shantnu (T\&D)** and **Pranav (ADMS)**.
+* Cards must display: **Story Number**, **Assigned User**, and **Priority**.
+* Remove **Filters** option from the board.
+* Fix **“+ Create New Task”** button (currently not working).
+
+#### **Shared for All Roles**
+
+* **View Options**:
+
+  * Fix **Swimlanes/List view**; add a functional **List View** (same columns: To Do → Completed).
+* **Layout Tweaks**:
+
+  * Make the **footer compact** (reduce vertical size).
+  * Add **vertical scrolling** to the board.
+* **Settings & Navigation**:
+
+  * Fix **Board Settings** (currently broken).
+  * Add **Project** and **Team Lead** dropdown selectors next to the “Project Kanban Board” heading.
+* **Clean Up Header**:
+
+  * Remove “Kanban Board” title, **Search bar**, and **“+ New Story”** button.
+* **Card Display**:
+
+  * Show **Story Number** at the top of each card.
+
+---
+
+This version separates **User**, **Team Lead**, and **All Roles** requirements, keeps instructions concise, and highlights exactly what needs to change in the UI.

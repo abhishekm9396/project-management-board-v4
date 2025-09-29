@@ -1,0 +1,146 @@
+
+1️⃣ Header / Top Navigation Bar
+
+Purpose: Quick global access to key controls and information.
+Details:
+
+Logo / App Name: Branding or project name.
+
+Global Search Bar: Search tasks, users, or projects.
+
+Filters & Sorting: Filter by status, assignee, priority, due date.
+
+User Profile Menu: Avatar with dropdown for Settings, Logout, etc.
+
+Notifications Icon: Real-time updates on new tasks, comments, mentions.
+
+2️⃣ Sidebar / Project Menu (Left Panel)
+
+Purpose: Easy navigation between projects, teams/lead, and settings.
+Details:
+
+Projects List: Switch between multiple projects.
+
+Teams/Leads: Access boards of specific teams/leads.
+
+Views: Switch to Calendar View, Gantt View, List View, or Reports.
+
+Admin Section (make it role-based): User & role management, board settings.
+
+3️⃣ Main Board Area (Kanban Columns & Cards)
+
+This is the heart of the UI.
+
+a. Columns (Kanban Stages)
+
+Default stages (customizable):
+
+To Do – Tasks not yet started.
+
+In Progress – Work currently happening.
+
+Blocked – Tasks stuck due to dependencies/issues.
+
+Validation / Review – Tasks waiting for QA/approval.
+
+Completed / Done – Finished tasks.
+
+Features:
+
+Editable column names & order (drag to reorder).
+
+WIP (Work-In-Progress) limits shown as counters (e.g., "3/5 tasks").
+
+Column-level menu: Add Task, Collapse Column, Edit Color.
+
+b. Cards (Tasks / Issues)
+
+Each task card represents a work item.
+
+Card Details:
+
+Title & Short Description
+
+Assignee Avatar(s)
+
+Labels/Tags (e.g., Priority, Bug, Feature)
+
+Don't add Due Date / Deadline for Kanban
+
+Attachments Icon (documents, images)
+
+Comments Count
+
+Drag & Drop Support to move between columns.
+
+4️⃣ Card Details / Task Modal (Popup or Side Drawer)
+
+When a user clicks a card, open a detailed view.
+
+Sections inside:
+
+Title & Full Description
+
+Comments / Activity Feed (with mentions and timestamps)
+
+Subtasks / Checklist
+
+Attachments & Links (files, URLs, GitHub commits, etc.)
+
+Custom Fields (priority, story points, sprint, etc.)
+
+History / Audit Trail (status changes, assignee changes).
+
+Watchers / Followers List.
+
+5️⃣ Toolbar Above Columns (Board-Level Controls)
+
+Purpose: Board-wide actions and quick filters.
+Details:
+
+Create New Task / Add Card Button
+
+Filters & Sorting (again, but board-specific) – Filter by label, user, due date.
+
+Swimlanes / Grouping Toggle – Group tasks by assignee, sprint, or epic.
+
+Zoom / Density Toggle – Adjust card size/density for large boards.
+
+Board Level Controls should only be available for Team lead and Admin. User should not see this controls
+
+6️⃣ Footer (Optional)
+
+Board statistics: Total tasks, completed tasks, etc.
+
+7️⃣ 
+
+8️⃣ Role-Specific Sections (Using Roles: Admin / Team Lead / User)
+
+Depending on user role:
+
+Admin: Board configuration, team management, role assignments.
+
+Team Lead: Add/remove users, create various types of Kanban boards, set WIP limits, approve tasks.
+
+User: Create/edit tasks, comment, upload attachments.
+
+🏗️ Suggested Layout Hierarchy
+-----------------------------------------------------
+| Header / Top Nav                                  |
+-----------------------------------------------------
+| Sidebar |       Main Board (Columns & Cards)      |
+|         |-----------------------------------------|
+|         | Card Details Drawer / Chat (Optional)   |
+-----------------------------------------------------
+| Footer (optional)                                 |
+-----------------------------------------------------
+
+🔑 Key UX Considerations
+
+Drag & Drop Smoothness is critical for a Kanban board.
+
+Real-time updates (WebSockets or polling) to reflect team actions.
+
+Mobile Responsiveness: Columns should collapse into a swipeable layout.
+
+Keyboard Shortcuts: Quick card creation, movement, and filtering.
